@@ -1,0 +1,13 @@
+@url=http://localhost:3000
+
+### OBTENER LISTA DE TAREAS
+GET {{url}}/tareas
+
+### AGREGAR TAREA
+POST {{url}}/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Lavar platos",
+    "estado": "Por hacer"
+}
