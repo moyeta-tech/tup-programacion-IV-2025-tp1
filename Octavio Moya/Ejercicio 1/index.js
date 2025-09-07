@@ -12,8 +12,10 @@ const app = express()
 
     let superficie = a * b
 
+// Calculamos perimetro y superficie y hacemos push al arreglo
     arreglo.push({ perimetro, superficie })
 
+    // En el get hacemos la validación de si es rectangulo o cuadrado
 app.get('/calculos', (req, res) => {
 
     const tipo = a === b ? 'Cuadrado' : 'Rectángulo'
@@ -22,6 +24,7 @@ app.get('/calculos', (req, res) => {
         return `perimetro: ${v.perimetro}, superficie: ${v.superficie}`
     })
 
+    // Mostramos lo que obtenemos del map y el tipo de figura
     res.json({ arreglo: calculos, figura: tipo })
 })
 

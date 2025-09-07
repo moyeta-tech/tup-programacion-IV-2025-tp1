@@ -1,13 +1,15 @@
 @url=http://localhost:3000
 
+
+### promedios de Alumno
+GET {{url}}/promedios
+
 ### Post de promedios
 POST {{url}}/promedios
 Content-Type: application/json
 
 {
-    "nombre": "Joaquín",
-    "notas": [6, 7, 6]
+    "nombre": "Martina",
+    "notas": [5, 9, 9]
 }
 
-### promedios de Alumno
-GET {{url}}/promedios
